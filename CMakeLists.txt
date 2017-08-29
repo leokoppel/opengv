@@ -37,7 +37,7 @@ OPTION(BUILD_SHARED_LIBS "Build shared libraries" OFF)
 OPTION(BUILD_PYTHON "Build Python extension" OFF)
 OPTION(BUILD_POSITION_INDEPENDENT_CODE "Build position independent code (-fPIC)" ON)
 
-add_definitions (-Wall -march=native -O3) #TODO use correct c++11 def once everybody has moved to gcc 4.7 # for now I even removed std=gnu++0x
+add_definitions (-Wall) #TODO use correct c++11 def once everybody has moved to gcc 4.7 # for now I even removed std=gnu++0x
 
 IF(BUILD_POSITION_INDEPENDENT_CODE)
   add_definitions( -fPIC )
